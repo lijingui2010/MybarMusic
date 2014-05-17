@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentTop="true"
+        android:background="#106184" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_below="@+id/top_relative"
+        android:background="#89683B"
+        android:paddingLeft="5dip"
+        android:paddingRight="7dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="270dip"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/my_music_title"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFF9200"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/songTitle"
+            android:background="@null"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="#FF565555"
+            android:textColorHighlight="#FFFF9200"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/songDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:scrollHorizontally="true"
+            android:text="@string/app_name"
+            android:textColor="#FF565555"
+            android:textColorHighlight="#FFFF9200"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>
