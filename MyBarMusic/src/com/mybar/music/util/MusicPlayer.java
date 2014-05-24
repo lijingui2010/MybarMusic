@@ -52,7 +52,7 @@ public class MusicPlayer {
 	 * 
 	 * @param path
 	 */
-	public void playFromInternet(String path) {
+	public void playFromNetwork(String path) {
 
 		try {
 			mediaPlayer.reset();
